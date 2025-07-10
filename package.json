@@ -1,0 +1,39 @@
+{
+  "name": "@zignal/persist",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "description": "Persistence plugin for Zignal signal stores (localStorage/sessionStorage)",
+  "keywords": [
+    "react",
+    "signals",
+    "store",
+    "state",
+    "preact",
+    "zignal",
+    "persist"
+  ],
+  "author": "Thinh.Nguyen",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@zignal/core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^7.0.3",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "sideEffects": false
+}
