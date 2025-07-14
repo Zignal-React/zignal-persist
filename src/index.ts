@@ -1,8 +1,9 @@
 import { useEffect, useSyncExternalStore } from 'react';
+import type { ZignalStore } from '@zignal/core';
 let storeId = 0;
 
 export function write<T>(
-	hook: (() => [T, (v: T) => void]) & { store?: { get: () => T; set: (v: T) => void; subscribe: (fn: () => void) => () => void } },
+	hook: (() => [T, (v: T) => void]) & { store?: ZignalStore<T> },
 	options?: { key?: string; storage?: 'localStorage' | 'sessionStorage' }
 ) {
 	const store = hook.store;

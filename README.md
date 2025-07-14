@@ -10,10 +10,13 @@ Persistence plugin for [@zignal/core](https://github.com/Zignal-React/zignal-cor
 ## Install
 
 ```sh
+npm install @zignal/core
 npm install @zignal/persist
 # or
+yarn add @zignal/core
 yarn add @zignal/persist
 # or
+pnpm add @zignal/core
 pnpm add @zignal/persist
 ```
 
